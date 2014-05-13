@@ -8,6 +8,7 @@
 
 #import "RBViewController.h"
 
+
 @interface RBViewController ()
 
 @end
@@ -17,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.picker = [[RBVideoPicker alloc] init];
+    self.picker.delegate = self;
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +28,27 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)starRecording:(id)sender {
+    
+       [self.picker startCaptureVideoOfQuality:RBLowVideoQuality];
+}
+
+-(void)videoController:(RBVideoPicker *)videoPicker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    
+    NSData *compressedVideo = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:[info valueForKey:RBCompressedVideoMediaURL]]];
+    
+    NSLog(@"size after compression %lu", (unsigned long)[compressedVideo length]);
+    
+    
+}
+
+-(void)videoControllerDidCancel:(RBVideoPicker *)videoPicker
+{
+
+    
+
 }
 
 @end

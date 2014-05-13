@@ -21,6 +21,10 @@
 		6A395FDD191FBA9F00434D11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A395FBF191FBA9E00434D11 /* UIKit.framework */; };
 		6A395FE5191FBA9F00434D11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A395FE3191FBA9F00434D11 /* InfoPlist.strings */; };
 		6A395FE7191FBA9F00434D11 /* RBVideoPickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A395FE6191FBA9F00434D11 /* RBVideoPickerDemoTests.m */; };
+		6A395FF71920199500434D11 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A395FF61920199500434D11 /* QuartzCore.framework */; };
+		6A395FF91920199B00434D11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A395FF81920199B00434D11 /* AVFoundation.framework */; };
+		6ABE3DC81922944A00ABED8E /* RBVideoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */; };
+		6ABE3DC91922944A00ABED8E /* RBVideoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		6A395FE2191FBA9F00434D11 /* RBVideoPickerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RBVideoPickerDemoTests-Info.plist"; sourceTree = "<group>"; };
 		6A395FE4191FBA9F00434D11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A395FE6191FBA9F00434D11 /* RBVideoPickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBVideoPickerDemoTests.m; sourceTree = "<group>"; };
+		6A395FF4191FBAFC00434D11 /* RBVideoControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBVideoControllerDelegate.h; sourceTree = "<group>"; };
+		6A395FF61920199500434D11 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6A395FF81920199B00434D11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6ABE3DC61922944A00ABED8E /* RBVideoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBVideoPicker.h; path = VideoPicker/RBVideoPicker.h; sourceTree = SOURCE_ROOT; };
+		6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBVideoPicker.m; path = VideoPicker/RBVideoPicker.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A395FF91920199B00434D11 /* AVFoundation.framework in Frameworks */,
+				6A395FF71920199500434D11 /* QuartzCore.framework in Frameworks */,
 				6A395FBE191FBA9E00434D11 /* CoreGraphics.framework in Frameworks */,
 				6A395FC0191FBA9E00434D11 /* UIKit.framework in Frameworks */,
 				6A395FBC191FBA9E00434D11 /* Foundation.framework in Frameworks */,
@@ -101,6 +112,8 @@
 		6A395FBA191FBA9E00434D11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A395FF81920199B00434D11 /* AVFoundation.framework */,
+				6A395FF61920199500434D11 /* QuartzCore.framework */,
 				6A395FBB191FBA9E00434D11 /* Foundation.framework */,
 				6A395FBD191FBA9E00434D11 /* CoreGraphics.framework */,
 				6A395FBF191FBA9E00434D11 /* UIKit.framework */,
@@ -112,8 +125,8 @@
 		6A395FC1191FBA9F00434D11 /* RBVideoPickerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6A395FCA191FBA9F00434D11 /* RBAppDelegate.h */,
-				6A395FCB191FBA9F00434D11 /* RBAppDelegate.m */,
+				6ABE3DC5192293D900ABED8E /* Delegate */,
+				6A395FF0191FBAA600434D11 /* RBVideoPicker */,
 				6A395FCD191FBA9F00434D11 /* Main.storyboard */,
 				6A395FD0191FBA9F00434D11 /* RBViewController.h */,
 				6A395FD1191FBA9F00434D11 /* RBViewController.m */,
@@ -150,6 +163,41 @@
 				6A395FE3191FBA9F00434D11 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A395FF0191FBAA600434D11 /* RBVideoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				6ABE3DC4192293B500ABED8E /* Video PickerClass */,
+				6A395FF5191FBB0200434D11 /* Protocol */,
+			);
+			name = RBVideoPicker;
+			sourceTree = "<group>";
+		};
+		6A395FF5191FBB0200434D11 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A395FF4191FBAFC00434D11 /* RBVideoControllerDelegate.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		6ABE3DC4192293B500ABED8E /* Video PickerClass */ = {
+			isa = PBXGroup;
+			children = (
+				6ABE3DC61922944A00ABED8E /* RBVideoPicker.h */,
+				6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */,
+			);
+			name = "Video PickerClass";
+			sourceTree = "<group>";
+		};
+		6ABE3DC5192293D900ABED8E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6A395FCA191FBA9F00434D11 /* RBAppDelegate.h */,
+				6A395FCB191FBA9F00434D11 /* RBAppDelegate.m */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +301,7 @@
 				6A395FCC191FBA9F00434D11 /* RBAppDelegate.m in Sources */,
 				6A395FC8191FBA9F00434D11 /* main.m in Sources */,
 				6A395FD2191FBA9F00434D11 /* RBViewController.m in Sources */,
+				6ABE3DC81922944A00ABED8E /* RBVideoPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A395FE7191FBA9F00434D11 /* RBVideoPickerDemoTests.m in Sources */,
+				6ABE3DC91922944A00ABED8E /* RBVideoPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +430,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBVideoPickerDemo/RBVideoPickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "RBVideoPickerDemo/RBVideoPickerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +444,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBVideoPickerDemo/RBVideoPickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "RBVideoPickerDemo/RBVideoPickerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +509,7 @@
 				6A395FEC191FBA9F00434D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A395FED191FBA9F00434D11 /* Build configuration list for PBXNativeTarget "RBVideoPickerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +518,7 @@
 				6A395FEF191FBA9F00434D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

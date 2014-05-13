@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RBVideoPicker.h"
 
-@interface RBViewController : UIViewController
+@interface RBViewController : UIViewController<RBVideoControllerDelegate>
+
+@property(nonatomic, strong)RBVideoPicker *picker;
 
 @end
