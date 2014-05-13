@@ -66,10 +66,10 @@ NSString * const RBThumbnailImageURL = @"THUMBNAILIMAGE";
             videoRecorder.videoQuality = UIImagePickerControllerQualityType640x480;
             break;
         case RBMediumVideoQuality:
-            videoRecorder.videoQuality = UIImagePickerControllerQualityTypeIFrame960x540;
+            videoRecorder.videoQuality = UIImagePickerControllerQualityTypeMedium;
             break;
         case RBHighVideoQuality:
-            videoRecorder.videoQuality = UIImagePickerControllerQualityTypeIFrame1280x720;
+            videoRecorder.videoQuality = UIImagePickerControllerQualityTypeHigh;
             break;
         default:
             break;

@@ -23,6 +23,14 @@
 		6A395FE7191FBA9F00434D11 /* RBVideoPickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A395FE6191FBA9F00434D11 /* RBVideoPickerDemoTests.m */; };
 		6A395FF71920199500434D11 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A395FF61920199500434D11 /* QuartzCore.framework */; };
 		6A395FF91920199B00434D11 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A395FF81920199B00434D11 /* AVFoundation.framework */; };
+		6A6896901922D75C0006DC99 /* AwsUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68968D1922D75C0006DC99 /* AwsUploadEngine.m */; };
+		6A6896911922D75C0006DC99 /* AwsUploadEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68968D1922D75C0006DC99 /* AwsUploadEngine.m */; };
+		6A6896921922D75C0006DC99 /* AwsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68968F1922D75C0006DC99 /* AwsConfig.m */; };
+		6A6896931922D75C0006DC99 /* AwsConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A68968F1922D75C0006DC99 /* AwsConfig.m */; };
+		6A6896961922D7720006DC99 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6896941922D7720006DC99 /* AWSRuntime.framework */; };
+		6A6896971922D7720006DC99 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6896941922D7720006DC99 /* AWSRuntime.framework */; };
+		6A6896981922D7720006DC99 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6896951922D7720006DC99 /* AWSS3.framework */; };
+		6A6896991922D7720006DC99 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6896951922D7720006DC99 /* AWSS3.framework */; };
 		6ABE3DC81922944A00ABED8E /* RBVideoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */; };
 		6ABE3DC91922944A00ABED8E /* RBVideoPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */; };
 /* End PBXBuildFile section */
@@ -60,6 +68,13 @@
 		6A395FF4191FBAFC00434D11 /* RBVideoControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBVideoControllerDelegate.h; sourceTree = "<group>"; };
 		6A395FF61920199500434D11 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6A395FF81920199B00434D11 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6A68968B1922D7520006DC99 /* RBUploadEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBUploadEngineProtocol.h; sourceTree = "<group>"; };
+		6A68968C1922D75C0006DC99 /* AwsUploadEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwsUploadEngine.h; sourceTree = "<group>"; };
+		6A68968D1922D75C0006DC99 /* AwsUploadEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwsUploadEngine.m; sourceTree = "<group>"; };
+		6A68968E1922D75C0006DC99 /* AwsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwsConfig.h; sourceTree = "<group>"; };
+		6A68968F1922D75C0006DC99 /* AwsConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwsConfig.m; sourceTree = "<group>"; };
+		6A6896941922D7720006DC99 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRuntime.framework; sourceTree = "<group>"; };
+		6A6896951922D7720006DC99 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
 		6ABE3DC61922944A00ABED8E /* RBVideoPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBVideoPicker.h; path = VideoPicker/RBVideoPicker.h; sourceTree = SOURCE_ROOT; };
 		6ABE3DC71922944A00ABED8E /* RBVideoPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBVideoPicker.m; path = VideoPicker/RBVideoPicker.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -72,6 +87,8 @@
 				6A395FF91920199B00434D11 /* AVFoundation.framework in Frameworks */,
 				6A395FF71920199500434D11 /* QuartzCore.framework in Frameworks */,
 				6A395FBE191FBA9E00434D11 /* CoreGraphics.framework in Frameworks */,
+				6A6896981922D7720006DC99 /* AWSS3.framework in Frameworks */,
+				6A6896961922D7720006DC99 /* AWSRuntime.framework in Frameworks */,
 				6A395FC0191FBA9E00434D11 /* UIKit.framework in Frameworks */,
 				6A395FBC191FBA9E00434D11 /* Foundation.framework in Frameworks */,
 			);
@@ -84,6 +101,8 @@
 				6A395FDB191FBA9F00434D11 /* XCTest.framework in Frameworks */,
 				6A395FDD191FBA9F00434D11 /* UIKit.framework in Frameworks */,
 				6A395FDC191FBA9F00434D11 /* Foundation.framework in Frameworks */,
+				6A6896971922D7720006DC99 /* AWSRuntime.framework in Frameworks */,
+				6A6896991922D7720006DC99 /* AWSS3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +131,8 @@
 		6A395FBA191FBA9E00434D11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A6896941922D7720006DC99 /* AWSRuntime.framework */,
+				6A6896951922D7720006DC99 /* AWSS3.framework */,
 				6A395FF81920199B00434D11 /* AVFoundation.framework */,
 				6A395FF61920199500434D11 /* QuartzCore.framework */,
 				6A395FBB191FBA9E00434D11 /* Foundation.framework */,
@@ -168,6 +189,8 @@
 		6A395FF0191FBAA600434D11 /* RBVideoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				6A68969C1922D7A70006DC99 /* upload Engine Protocol */,
+				6A68969A1922D7950006DC99 /* Aws */,
 				6ABE3DC4192293B500ABED8E /* Video PickerClass */,
 				6A395FF5191FBB0200434D11 /* Protocol */,
 			);
@@ -180,6 +203,41 @@
 				6A395FF4191FBAFC00434D11 /* RBVideoControllerDelegate.h */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		6A68969A1922D7950006DC99 /* Aws */ = {
+			isa = PBXGroup;
+			children = (
+				6A68969D1922D7B30006DC99 /* Config */,
+				6A68969B1922D79B0006DC99 /* Engine */,
+			);
+			name = Aws;
+			sourceTree = "<group>";
+		};
+		6A68969B1922D79B0006DC99 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				6A68968C1922D75C0006DC99 /* AwsUploadEngine.h */,
+				6A68968D1922D75C0006DC99 /* AwsUploadEngine.m */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		6A68969C1922D7A70006DC99 /* upload Engine Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6A68968B1922D7520006DC99 /* RBUploadEngineProtocol.h */,
+			);
+			name = "upload Engine Protocol";
+			sourceTree = "<group>";
+		};
+		6A68969D1922D7B30006DC99 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6A68968E1922D75C0006DC99 /* AwsConfig.h */,
+				6A68968F1922D75C0006DC99 /* AwsConfig.m */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 		6ABE3DC4192293B500ABED8E /* Video PickerClass */ = {
@@ -298,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6896901922D75C0006DC99 /* AwsUploadEngine.m in Sources */,
 				6A395FCC191FBA9F00434D11 /* RBAppDelegate.m in Sources */,
 				6A395FC8191FBA9F00434D11 /* main.m in Sources */,
+				6A6896921922D75C0006DC99 /* AwsConfig.m in Sources */,
 				6A395FD2191FBA9F00434D11 /* RBViewController.m in Sources */,
 				6ABE3DC81922944A00ABED8E /* RBVideoPicker.m in Sources */,
 			);
@@ -309,8 +369,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6896911922D75C0006DC99 /* AwsUploadEngine.m in Sources */,
 				6A395FE7191FBA9F00434D11 /* RBVideoPickerDemoTests.m in Sources */,
 				6ABE3DC91922944A00ABED8E /* RBVideoPicker.m in Sources */,
+				6A6896931922D75C0006DC99 /* AwsConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +489,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBVideoPickerDemo/RBVideoPickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "RBVideoPickerDemo/RBVideoPickerDemo-Info.plist";
@@ -441,6 +507,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBVideoPickerDemo/RBVideoPickerDemo-Prefix.pch";
 				INFOPLIST_FILE = "RBVideoPickerDemo/RBVideoPickerDemo-Info.plist";
@@ -458,6 +528,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBVideoPickerDemo/RBVideoPickerDemo-Prefix.pch";
@@ -480,6 +551,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RBVideoPickerDemo/RBVideoPickerDemo-Prefix.pch";

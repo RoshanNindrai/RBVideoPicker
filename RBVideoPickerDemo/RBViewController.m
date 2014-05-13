@@ -7,7 +7,8 @@
 //
 
 #import "RBViewController.h"
-
+#import <MediaPlayer/MediaPlayer.h>
+#import "AwsUploadEngine.h"
 
 @interface RBViewController ()
 
@@ -40,8 +41,12 @@
     NSData *compressedVideo = [NSData dataWithContentsOfURL:[NSURL fileURLWithPath:[info valueForKey:RBCompressedVideoMediaURL]]];
     
     NSLog(@"size after compression %lu", (unsigned long)[compressedVideo length]);
-    
-    
+    [[AwsUploadEngine sharedAWSEngine] performAsynchronousVideoUpload:compressedVideo ofTitle:@"test.mp4" withCompletion:^(BOOL success){
+        
+        NSLog(@"upload result %d", success);
+        
+        
+    }];
 }
 
 -(void)videoControllerDidCancel:(RBVideoPicker *)videoPicker
